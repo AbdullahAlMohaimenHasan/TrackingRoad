@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_y"
+    android:weightSum="3"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:background="@drawable/first"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/speedText"
+            android:layout_width="wrap_content"
+            android:textColor="@color/a"
+            android:textStyle="bold"
+            android:textSize="50sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="0.0 Km/h" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchId"
+            android:layout_width="200dp"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/a"
+            android:text="Metric Units" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:weightSum="3"
+        android:background="@drawable/second"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/buttonz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/a"
+                android:background="@drawable/circle_button"
+                android:drawableTop="@drawable/ic_baseline_description_24"
+                android:text="Statics" />
+            <Button
+                android:id="@+id/buttony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/a"
+                android:background="@drawable/circle_button"
+                android:drawableTop="@drawable/ic_baseline_map_24"
+                android:text="Map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/a"
+                android:background="@drawable/circle_button"
+                android:drawableTop="@drawable/ic_baseline_emoji_transportation_24"
+                android:text="Vehicle\ninfo" />
+            <Button
+                android:id="@+id/buttonw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/a"
+                android:background="@drawable/circle_button"
+                android:drawableTop="@drawable/ic_baseline_add_location_24"
+                android:text="Save\nLocation"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/a"
+                android:background="@drawable/circle_button"
+                android:drawableTop="@drawable/ic_baseline_local_gas_station_24"
+                android:text="Gas\nStation" />
+            <Button
+                android:id="@+id/buttonu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@color/a"
+                android:background="@drawable/circle_button"
+                android:drawableTop="@drawable/ic_baseline_exit_to_app_24"
+                android:text="Exit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
